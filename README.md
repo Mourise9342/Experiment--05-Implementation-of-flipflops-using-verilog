@@ -155,7 +155,7 @@ endmodule
 ![Screenshot (58)](https://github.com/Mourise9342/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120081893/6e39c93b-cdff-463a-bedb-86077bc330b0)
 
 ### Using JK flipflop
-
+```
 module jk(q,qbar,k,j,clk);
 input j,k,clk;
 output q,qbar;
@@ -165,6 +165,7 @@ nand(y,k,clk,q);
 nand(q,x,qbar,qbar);
 nand(qbar,y,q);
 endmodule
+```
 
 ### RT LOGIC FOR FLIPFLOP
 
@@ -175,6 +176,7 @@ endmodule
 ![ss 102](https://github.com/Mourise9342/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120081893/b36b7df8-d9c3-4caa-b271-0a948b2fb772)
 
 ### Using D Flipflop
+```
 module d(q,qbar,d1,clk);
 input d1,clk;
 output q,qbar;
@@ -185,7 +187,8 @@ nand(n1,clk,d1);
 nand(n2,clk,x);
 nand(q,n2,qbar);
 nand(qbar,n1,q);
-endmodule 
+endmodule
+```
 
 ### RT LOGIC FOR FLIPfLOP
 
@@ -196,6 +199,7 @@ endmodule
 ![ss 164](https://github.com/Mourise9342/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120081893/63b722e9-65a9-4dfc-9f1f-364e910d9580)
 
 ### Using T Flipflop
+```
 module hs(t,qbar,q,clk);
 input t,clk;
 output q,qbar;
@@ -205,6 +209,7 @@ nand(n2,clk,t,q);
 nand(q,n1,qbar);
 nand(qbar,n2,q);
 endmodule
+```
 
 ### RT LOGIC FOR FLIPFLOPS
 ![ss 165](https://github.com/Mourise9342/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120081893/547aa919-83df-416c-9916-dec8525e2481)
